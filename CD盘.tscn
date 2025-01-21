@@ -1,0 +1,154 @@
+[gd_scene load_steps=19 format=3 uid="uid://ceyo0jpq47bua"]
+
+[ext_resource type="Script" path="res://cd盘.gd" id="1_o6jt3"]
+[ext_resource type="Resource" uid="uid://bi0ehbg34gsn3" path="res://assets/res/碧色晴海风.tres" id="2_lu1v8"]
+[ext_resource type="Texture2D" uid="uid://c0obrqcevmea3" path="res://assets/texture/CD_side/碧色晴海风side.png" id="3_lpp65"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_23vsn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ubtf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h4mqm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2h6kv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_41uut"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_20h46"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1qjd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o8kw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w72bm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4fltw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8idim"]
+
+[sub_resource type="Animation" id="Animation_6vo7j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("显示:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(17.5, 38)]
+}
+
+[sub_resource type="Animation" id="Animation_1ym26"]
+resource_name = "复原"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("显示:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(19.5, 38), Vector2(17.5, 38)]
+}
+
+[sub_resource type="Animation" id="Animation_3s742"]
+resource_name = "选中"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("显示:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(17.5, 38), Vector2(19.5, 38)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ly1oa"]
+_data = {
+"RESET": SubResource("Animation_6vo7j"),
+"复原": SubResource("Animation_1ym26"),
+"选中": SubResource("Animation_3s742")
+}
+
+[node name="CD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 35.0
+offset_bottom = 76.0
+script = ExtResource("1_o6jt3")
+"CD资源" = ExtResource("2_lu1v8")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 35.0
+offset_bottom = 76.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_23vsn")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7ubtf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h4mqm")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2h6kv")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_41uut")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_20h46")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1qjd")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_o8kw3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w72bm")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4fltw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8idim")
+
+[node name="显示" type="Sprite2D" parent="."]
+position = Vector2(17.5, 38)
+texture = ExtResource("3_lpp65")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ly1oa")
+}
+
+[connection signal="mouse_entered" from="Button" to="." method="鼠标进入"]
+[connection signal="mouse_exited" from="Button" to="." method="鼠标离开"]
+[connection signal="pressed" from="Button" to="." method="点击"]

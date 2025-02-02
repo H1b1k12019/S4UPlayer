@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CD" load_steps=7 format=3 uid="uid://7ncce28jtgfj"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_5exqj"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_7qx7s"]
+[ext_resource type="AudioStream" uid="uid://b1cinc4kfwvku" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/03 City Police.mp3" id="3_3iqh7"]
+[ext_resource type="AudioStream" uid="uid://nbplbpmijcdm" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/02 Night of MaYuan.mp3" id="4_qctr7"]
+
+[sub_resource type="Resource" id="Resource_un15g"]
+script = ExtResource("2_7qx7s")
+"歌曲名称" = "City Police"
+"歌曲文件" = ExtResource("3_3iqh7")
+
+[sub_resource type="Resource" id="Resource_5jnxm"]
+script = ExtResource("2_7qx7s")
+"歌曲名称" = "Night of MaYuan"
+"歌曲文件" = ExtResource("4_qctr7")
+
+[resource]
+script = ExtResource("1_5exqj")
+"歌单" = Array[ExtResource("2_7qx7s")]([SubResource("Resource_un15g"), SubResource("Resource_5jnxm")])

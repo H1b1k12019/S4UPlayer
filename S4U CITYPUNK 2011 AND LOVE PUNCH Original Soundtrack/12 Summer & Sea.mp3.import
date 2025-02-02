@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc336un75kglu"
+path="res://.godot/imported/12 Summer & Sea.mp3-c37c9f2ddd8605d2b1d0b177288d997e.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/12 Summer & Sea.mp3"
+dest_files=["res://.godot/imported/12 Summer & Sea.mp3-c37c9f2ddd8605d2b1d0b177288d997e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

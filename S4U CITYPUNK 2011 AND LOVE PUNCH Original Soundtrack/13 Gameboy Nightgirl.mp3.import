@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbby24liir103"
+path="res://.godot/imported/13 Gameboy Nightgirl.mp3-886bb9680fdfdbc90da0789758bf8c46.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/13 Gameboy Nightgirl.mp3"
+dest_files=["res://.godot/imported/13 Gameboy Nightgirl.mp3-886bb9680fdfdbc90da0789758bf8c46.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

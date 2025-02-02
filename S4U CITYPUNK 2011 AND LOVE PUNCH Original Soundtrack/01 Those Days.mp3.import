@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cg4yi5g4ghkll"
+path="res://.godot/imported/01 Those Days.mp3-9fd85bfa05d95b06ad1d621909c67057.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/01 Those Days.mp3"
+dest_files=["res://.godot/imported/01 Those Days.mp3-9fd85bfa05d95b06ad1d621909c67057.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

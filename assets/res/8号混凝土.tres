@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://csbifrcebhxot"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_8wyxg"]
+[ext_resource type="AudioStream" uid="uid://dw3fmhj2xvjut" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/05 Night Scene.mp3" id="2_nxfv2"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_yyt68"]
+[ext_resource type="AudioStream" uid="uid://bp6yloacn33ec" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/22 Nil! Nil!.mp3" id="3_nftfk"]
+[ext_resource type="AudioStream" uid="uid://cbby24liir103" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/13 Gameboy Nightgirl.mp3" id="4_jhkte"]
+
+[sub_resource type="Resource" id="Resource_mcjlc"]
+script = ExtResource("2_yyt68")
+"歌曲名称" = "Night Scene"
+"歌曲文件" = ExtResource("2_nxfv2")
+
+[sub_resource type="Resource" id="Resource_8l5nt"]
+script = ExtResource("2_yyt68")
+"歌曲名称" = "Nil! Nil!"
+"歌曲文件" = ExtResource("3_nftfk")
+
+[sub_resource type="Resource" id="Resource_at2ij"]
+script = ExtResource("2_yyt68")
+"歌曲名称" = "Gameboy Nightgirl"
+"歌曲文件" = ExtResource("4_jhkte")
+
+[resource]
+script = ExtResource("1_8wyxg")
+"歌单" = Array[ExtResource("2_yyt68")]([SubResource("Resource_mcjlc"), SubResource("Resource_8l5nt"), SubResource("Resource_at2ij")])

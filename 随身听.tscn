@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://bbw2s13iccuqo"]
+[gd_scene load_steps=51 format=3 uid="uid://bbw2s13iccuqo"]
 
 [ext_resource type="Script" path="res://随身听.gd" id="1_vq5op"]
 [ext_resource type="Texture2D" uid="uid://d2hu5hbradqrv" path="res://assets/texture/MDPlayer_Box.png" id="1_xut22"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bibrd5syhf8yj" path="res://assets/texture/CD_front/便利店后武装少女两人.png" id="5_31llx"]
 [ext_resource type="Texture2D" uid="uid://bn2fqtmbxntpw" path="res://assets/texture/随机.png" id="5_kic3o"]
 [ext_resource type="Texture2D" uid="uid://61mtfugcrl48" path="res://assets/texture/上一首.png" id="5_ujook"]
+[ext_resource type="Texture2D" uid="uid://bw0jh8gkvk3q6" path="res://assets/texture/MDPlayer_Bottom.png" id="6_16xi6"]
 [ext_resource type="Texture2D" uid="uid://dxbettu0aebo" path="res://assets/texture/随机_按下.png" id="6_801vp"]
 [ext_resource type="Texture2D" uid="uid://70rcnqrqxbiq" path="res://assets/texture/上一首_按下.png" id="6_wgm47"]
 [ext_resource type="Texture2D" uid="uid://dlcwshh5kd4ak" path="res://assets/texture/下一首.png" id="7_6ondb"]
@@ -17,7 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://du0lxlm647peo" path="res://assets/texture/播放.png" id="9_k1xu2"]
 [ext_resource type="Texture2D" uid="uid://bvx8o3lcio043" path="res://assets/texture/播放_按下.png" id="10_afci8"]
 [ext_resource type="FontFile" uid="uid://3vsdos4on7yw" path="res://assets/font/unifont-15.1.04.otf" id="17_7imkx"]
-[ext_resource type="Texture2D" uid="uid://uo0pgddd0iqc" path="res://assets/texture/UI/UISprite.png" id="17_japd5"]
+[ext_resource type="Texture2D" uid="uid://bfgrdwrekh4rn" path="res://assets/texture/UI/boo.png" id="17_f8u1e"]
+[ext_resource type="FontFile" uid="uid://sxdqku7scaur" path="res://assets/font/(mod)Fusion-Pixel-12px.otf" id="17_qjkhq"]
 [ext_resource type="PackedScene" uid="uid://ceyo0jpq47bua" path="res://CD盘.tscn" id="25_4m4i0"]
 [ext_resource type="Resource" uid="uid://50mih02r2rf3" path="res://assets/res/烟，花.tres" id="27_1gdo7"]
 [ext_resource type="Resource" uid="uid://cbw65r6ekeuaj" path="res://assets/res/网中鸟.tres" id="27_7jnxf"]
@@ -30,7 +32,11 @@
 [ext_resource type="Texture2D" uid="uid://xgas2pn4sgwh" path="res://assets/texture/UI/window.png" id="30_nxh2s"]
 [ext_resource type="Texture2D" uid="uid://dp1ycg3gby4nf" path="res://assets/texture/UI/window_hover.png" id="31_lo1wv"]
 [ext_resource type="Resource" uid="uid://csbifrcebhxot" path="res://assets/res/8号混凝土.tres" id="31_vnjp5"]
+[ext_resource type="Texture2D" uid="uid://cnpbncoiovoqt" path="res://assets/texture/+.png" id="32_808o7"]
 [ext_resource type="Resource" uid="uid://c1d8bxgykdf4t" path="res://assets/res/浓缩拼配.tres" id="32_bklqb"]
+[ext_resource type="Texture2D" uid="uid://cbvb2ovsyrqam" path="res://assets/texture/+_pressed.png" id="33_1bda8"]
+[ext_resource type="Texture2D" uid="uid://bdxbktcnwioay" path="res://assets/texture/-.png" id="34_ghnjo"]
+[ext_resource type="Texture2D" uid="uid://b7s2tjo0m856u" path="res://assets/texture/-_pressed.png" id="35_y4vpx"]
 
 [sub_resource type="Animation" id="Animation_wueec"]
 length = 0.001
@@ -106,6 +112,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [Vector2(4, -17)]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/歌名显示:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_dffg1"]
 resource_name = "插入碟片"
@@ -140,11 +158,11 @@ tracks/2/path = NodePath(".")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.866667),
+"times": PackedFloat32Array(1),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
-"method": &"初始化音乐"
+"method": &"CD已插入"
 }]
 }
 tracks/3/type = "value"
@@ -170,6 +188,18 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(4, -17), Vector2(4, -2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/歌名显示:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
 }
 
 [sub_resource type="Animation" id="Animation_fdxvm"]
@@ -288,148 +318,12 @@ _data = {
 "非播放_0": SubResource("Animation_tj36o")
 }
 
-[sub_resource type="Animation" id="Animation_i5107"]
-resource_name = "弹出"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CD盘集合/CD9:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(117, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CD盘集合/CD8:position")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(105, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CD盘集合/CD7:position")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(93, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CD盘集合/CD6:position")
-tracks/3/interp = 2
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(81, 0)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("CD盘集合/CD5:position")
-tracks/4/interp = 2
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(69, 0)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("CD盘集合/CD11:position")
-tracks/5/interp = 2
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(57, 0)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("CD盘集合/CD4:position")
-tracks/6/interp = 2
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(45, 0)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("CD盘集合/CD3:position")
-tracks/7/interp = 2
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(33, 0)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("CD盘集合/CD10:position")
-tracks/8/interp = 2
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(21, 0)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("CD盘集合/CD2:position")
-tracks/9/interp = 2
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(9, 0)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("CD盘集合/CD:position")
-tracks/10/interp = 2
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(-3, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_p1r6c"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CD盘集合/CD9:position")
+tracks/0/path = NodePath("CD盘集合/CD11:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -441,7 +335,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CD盘集合/CD8:position")
+tracks/1/path = NodePath("CD盘集合/CD10:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -453,7 +347,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("CD盘集合/CD7:position")
+tracks/2/path = NodePath("CD盘集合/CD9:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -465,7 +359,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("CD盘集合/CD6:position")
+tracks/3/path = NodePath("CD盘集合/CD8:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -477,7 +371,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("CD盘集合/CD5:position")
+tracks/4/path = NodePath("CD盘集合/CD7:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -489,7 +383,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("CD盘集合/CD11:position")
+tracks/5/path = NodePath("CD盘集合/CD6:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -501,7 +395,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("CD盘集合/CD4:position")
+tracks/6/path = NodePath("CD盘集合/CD5:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -513,7 +407,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("CD盘集合/CD3:position")
+tracks/7/path = NodePath("CD盘集合/CD4:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -525,7 +419,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("CD盘集合/CD10:position")
+tracks/8/path = NodePath("CD盘集合/CD3:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -549,7 +443,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("CD盘集合/CD:position")
+tracks/10/path = NodePath("CD盘集合/CD1:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -557,6 +451,142 @@ tracks/10/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(-3, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_i5107"]
+resource_name = "弹出"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CD盘集合/CD11:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(117, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CD盘集合/CD10:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(105, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CD盘集合/CD9:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(93, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CD盘集合/CD8:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(81, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CD盘集合/CD7:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(69, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CD盘集合/CD6:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(57, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CD盘集合/CD5:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(45, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CD盘集合/CD4:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(33, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CD盘集合/CD3:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(21, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CD盘集合/CD2:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(9, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CD盘集合/CD1:position")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-3, 0), Vector2(-3, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n7rut"]
@@ -573,6 +603,13 @@ size = Vector2(29, 17)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_chwuo"]
 size = Vector2(3, 20)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0w161"]
+texture = ExtResource("17_f8u1e")
+texture_margin_left = 10.0
+texture_margin_top = 6.0
+texture_margin_right = 10.0
+texture_margin_bottom = 8.0
+
 [node name="随身听" type="Node2D"]
 script = ExtResource("1_vq5op")
 "插入的CD" = ExtResource("29_ndyv7")
@@ -582,6 +619,11 @@ stream = ExtResource("2_eahjx")
 
 [node name="音频播放" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_eahjx")
+
+[node name="MdPlayerBottom" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-5.5, -2)
+texture = ExtResource("6_16xi6")
 
 [node name="MdPlayerMd" type="Sprite2D" parent="."]
 visible = false
@@ -603,7 +645,7 @@ position = Vector2(13.5, -2)
 texture = ExtResource("3_78drh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(80, -7)
+position = Vector2(79, -7)
 zoom = Vector2(4, 4)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -637,6 +679,14 @@ toggle_mode = true
 texture_normal = ExtResource("5_kic3o")
 texture_pressed = ExtResource("6_801vp")
 
+[node name="上一首" type="TextureButton" parent="."]
+offset_left = 1.0
+offset_top = 10.0
+offset_right = 12.0
+offset_bottom = 20.0
+texture_normal = ExtResource("5_ujook")
+texture_pressed = ExtResource("6_wgm47")
+
 [node name="下一首" type="TextureButton" parent="."]
 offset_left = 21.0
 offset_top = 10.0
@@ -652,14 +702,6 @@ offset_right = 22.0
 offset_bottom = 20.0
 texture_normal = ExtResource("9_k1xu2")
 texture_pressed = ExtResource("10_afci8")
-
-[node name="上一首" type="TextureButton" parent="."]
-offset_left = 1.0
-offset_top = 10.0
-offset_right = 12.0
-offset_bottom = 20.0
-texture_normal = ExtResource("5_ujook")
-texture_pressed = ExtResource("6_wgm47")
 
 [node name="Panel" type="Panel" parent="."]
 clip_children = 1
@@ -697,87 +739,105 @@ layout_mode = 2
 position = Vector2(-2, 6)
 shape = SubResource("RectangleShape2D_chwuo")
 
-[node name="唱片名" type="TextureRect" parent="."]
+[node name="唱片名" type="Control" parent="."]
 visible = false
 z_index = 2
-offset_left = 164.0
-offset_top = 40.0
-offset_right = 260.0
-offset_bottom = 72.0
+layout_mode = 3
+anchors_preset = 0
+offset_left = 218.0
+offset_top = 62.0
+offset_right = 332.0
+offset_bottom = 92.0
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("17_japd5")
 
 [node name="显示唱片名" type="Label" parent="唱片名"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 4.0
-offset_top = 12.0
-offset_right = 180.0
-offset_bottom = 28.0
-scale = Vector2(0.5, 0.5)
+layout_direction = 3
+layout_mode = 2
+anchor_left = 0.667
+anchor_top = 0.906
+anchor_right = 0.667
+anchor_bottom = 0.906
+offset_left = 32.962
+offset_top = -47.18
+offset_right = 65.962
+offset_bottom = -21.18
 theme_override_colors/font_color = Color(0.317647, 0.317647, 0.317647, 1)
-theme_override_fonts/font = ExtResource("17_7imkx")
-theme_override_font_sizes/font_size = 16
-text = "便利店后武装少女两人"
-horizontal_alignment = 1
+theme_override_fonts/font = ExtResource("17_qjkhq")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxTexture_0w161")
+text = "阳"
+horizontal_alignment = 2
+vertical_alignment = 2
 
 [node name="CD盘集合" type="Node2D" parent="."]
 position = Vector2(60, -37)
 
-[node name="CD9" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD11" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 117.0
 offset_right = 152.0
+"CD本地化标签" = "CDTETX_11"
 "CD资源" = ExtResource("27_guspw")
 
-[node name="CD8" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD10" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 105.0
 offset_right = 140.0
+"CD本地化标签" = "CDTETX_10"
 "CD资源" = ExtResource("27_urcji")
 
-[node name="CD7" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD9" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 93.0
 offset_right = 128.0
+"CD本地化标签" = "CDTETX_9"
 "CD资源" = ExtResource("27_1gdo7")
 
-[node name="CD6" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD8" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 81.0
 offset_right = 116.0
+"CD本地化标签" = "CDTETX_8"
 "CD资源" = ExtResource("2_x74o3")
 
-[node name="CD5" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD7" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 69.0
 offset_right = 104.0
+"CD本地化标签" = "CDTETX_7"
 "CD资源" = ExtResource("27_7jnxf")
 
-[node name="CD11" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD6" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 57.0
 offset_right = 92.0
+"CD本地化标签" = "CDTETX_6"
 "CD资源" = ExtResource("30_ero74")
 
-[node name="CD4" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD5" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 45.0
 offset_right = 80.0
+"CD本地化标签" = "CDTETX_5"
 "CD资源" = ExtResource("31_vnjp5")
 
-[node name="CD3" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD4" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 33.0
 offset_right = 68.0
+"CD本地化标签" = "CDTETX_4"
 
-[node name="CD10" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD3" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 21.0
 offset_right = 56.0
+"CD本地化标签" = "CDTETX_3"
 "CD资源" = ExtResource("32_bklqb")
 
 [node name="CD2" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 offset_left = 9.0
 offset_right = 44.0
+"CD本地化标签" = "CDTETX_2"
 "CD资源" = ExtResource("2_1plgi")
 
-[node name="CD" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
+[node name="CD1" parent="CD盘集合" instance=ExtResource("25_4m4i0")]
 visible = false
 offset_left = -3.0
 offset_right = 32.0
+"CD本地化标签" = "CDTETX_1"
 "CD资源" = ExtResource("29_ndyv7")
 
 [node name="TextureButton" type="TextureButton" parent="."]
@@ -792,6 +852,7 @@ texture_pressed = ExtResource("29_8kn42")
 texture_hover = ExtResource("29_8kn42")
 
 [node name="TextureButton2" type="TextureButton" parent="."]
+visible = false
 offset_left = -48.0
 offset_top = -54.0
 offset_right = -32.0
@@ -802,11 +863,29 @@ texture_normal = ExtResource("30_nxh2s")
 texture_pressed = ExtResource("30_nxh2s")
 texture_hover = ExtResource("31_lo1wv")
 
+[node name="TextureButton3" type="TextureButton" parent="."]
+offset_left = -51.0
+offset_top = -37.0
+offset_right = -43.0
+offset_bottom = -27.0
+texture_normal = ExtResource("32_808o7")
+texture_pressed = ExtResource("33_1bda8")
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+offset_left = -51.0
+offset_top = -27.0
+offset_right = -43.0
+offset_bottom = -17.0
+texture_normal = ExtResource("34_ghnjo")
+texture_pressed = ExtResource("35_y4vpx")
+
 [connection signal="finished" from="音频播放" to="." method="当前歌曲播放完成"]
 [connection signal="toggled" from="单曲循环" to="." method="切换单曲循环"]
+[connection signal="pressed" from="上一首" to="." method="上一首"]
 [connection signal="pressed" from="下一首" to="." method="下一首"]
 [connection signal="pressed" from="播放" to="." method="播放"]
-[connection signal="pressed" from="上一首" to="." method="上一首"]
 [connection signal="area_entered" from="Panel/Area2D" to="." method="文字离开"]
 [connection signal="toggled" from="TextureButton" to="." method="置顶窗口"]
 [connection signal="toggled" from="TextureButton2" to="." method="修改窗口大小"]
+[connection signal="pressed" from="TextureButton3" to="." method="放大窗口"]
+[connection signal="pressed" from="TextureButton4" to="." method="缩小窗口"]

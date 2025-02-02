@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://suxelb6dosie"
+path="res://.godot/imported/04 Typing in the Room.mp3-e1727f073ee9b5b903c08df754b1b2b8.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/04 Typing in the Room.mp3"
+dest_files=["res://.godot/imported/04 Typing in the Room.mp3-e1727f073ee9b5b903c08df754b1b2b8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

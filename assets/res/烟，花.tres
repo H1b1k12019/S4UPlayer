@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CD" load_steps=5 format=3 uid="uid://50mih02r2rf3"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_xry0r"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_of0f5"]
+[ext_resource type="AudioStream" uid="uid://cskk5jh60at6e" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/10 Loveyu.mp3" id="3_am51v"]
+
+[sub_resource type="Resource" id="Resource_nvx6g"]
+script = ExtResource("2_of0f5")
+"歌曲名称" = "Loveyu"
+"歌曲文件" = ExtResource("3_am51v")
+
+[resource]
+script = ExtResource("1_xry0r")
+"歌单" = Array[ExtResource("2_of0f5")]([SubResource("Resource_nvx6g")])

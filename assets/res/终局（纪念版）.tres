@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://dx8c6y2uocaam"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_2qh6h"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_j3rsb"]
+[ext_resource type="AudioStream" uid="uid://c7tg3vop4hxvm" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/17 Whispers of the Mind.mp3" id="3_2s3d7"]
+[ext_resource type="AudioStream" uid="uid://dib40k3leab3h" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/20 Way Home.mp3" id="4_ohg5l"]
+[ext_resource type="AudioStream" uid="uid://ct4p623ojs6pe" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/19 Rainy Street.mp3" id="5_7ublj"]
+
+[sub_resource type="Resource" id="Resource_ali57"]
+script = ExtResource("2_j3rsb")
+"歌曲名称" = "Whispers of the Mind"
+"歌曲文件" = ExtResource("3_2s3d7")
+
+[sub_resource type="Resource" id="Resource_ps0wi"]
+script = ExtResource("2_j3rsb")
+"歌曲名称" = "Way Home"
+"歌曲文件" = ExtResource("4_ohg5l")
+
+[sub_resource type="Resource" id="Resource_3b5vp"]
+script = ExtResource("2_j3rsb")
+"歌曲名称" = "Rain Street"
+"歌曲文件" = ExtResource("5_7ublj")
+
+[resource]
+script = ExtResource("1_2qh6h")
+"歌单" = Array[ExtResource("2_j3rsb")]([SubResource("Resource_ali57"), SubResource("Resource_ps0wi"), SubResource("Resource_3b5vp")])

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CD" load_steps=7 format=3 uid="uid://cbw65r6ekeuaj"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_wek40"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_0y0n4"]
+[ext_resource type="AudioStream" uid="uid://cg4yi5g4ghkll" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/01 Those Days.mp3" id="3_6crm7"]
+[ext_resource type="AudioStream" uid="uid://dgbxujnctc8bm" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/23 Aqua.mp3" id="4_bj82i"]
+
+[sub_resource type="Resource" id="Resource_beeav"]
+script = ExtResource("2_0y0n4")
+"歌曲名称" = "OST_Those Days"
+"歌曲文件" = ExtResource("3_6crm7")
+
+[sub_resource type="Resource" id="Resource_ijsk4"]
+script = ExtResource("2_0y0n4")
+"歌曲名称" = "OST_Aqua"
+"歌曲文件" = ExtResource("4_bj82i")
+
+[resource]
+script = ExtResource("1_wek40")
+"歌单" = Array[ExtResource("2_0y0n4")]([SubResource("Resource_beeav"), SubResource("Resource_ijsk4")])

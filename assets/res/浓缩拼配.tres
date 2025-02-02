@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://c1d8bxgykdf4t"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_fy2gj"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_ux8xy"]
+[ext_resource type="AudioStream" uid="uid://suxelb6dosie" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/04 Typing in the Room.mp3" id="3_wwj2q"]
+[ext_resource type="AudioStream" uid="uid://d0ndutpkw0g21" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/26 私のそばにいて.mp3" id="4_j2wrd"]
+[ext_resource type="AudioStream" uid="uid://ixyalr2wgsd6" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/14 暮れゆく.mp3" id="5_735mt"]
+
+[sub_resource type="Resource" id="Resource_nu2un"]
+script = ExtResource("2_ux8xy")
+"歌曲名称" = "OST_Typing in the Room"
+"歌曲文件" = ExtResource("3_wwj2q")
+
+[sub_resource type="Resource" id="Resource_pvcmi"]
+script = ExtResource("2_ux8xy")
+"歌曲名称" = "OST_私のそばにいて"
+"歌曲文件" = ExtResource("4_j2wrd")
+
+[sub_resource type="Resource" id="Resource_d76jt"]
+script = ExtResource("2_ux8xy")
+"歌曲名称" = "OST_暮れゆく"
+"歌曲文件" = ExtResource("5_735mt")
+
+[resource]
+script = ExtResource("1_fy2gj")
+"歌单" = Array[ExtResource("2_ux8xy")]([SubResource("Resource_nu2un"), SubResource("Resource_pvcmi"), SubResource("Resource_d76jt")])

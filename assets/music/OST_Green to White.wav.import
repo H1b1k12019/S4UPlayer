@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bdx5k6lrykvpl"
+path="res://.godot/imported/OST_Green to White.wav-af861c7f5fcb54d42837070c9d8c5760.sample"
+
+[deps]
+
+source_file="res://assets/music/OST_Green to White.wav"
+dest_files=["res://.godot/imported/OST_Green to White.wav-af861c7f5fcb54d42837070c9d8c5760.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

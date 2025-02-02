@@ -1,6 +1,7 @@
 @tool
 extends Control
 
+@export var CD本地化标签:String
 @export var CD资源:CD
 var CD名称
 
@@ -15,12 +16,15 @@ func 点击() -> void:
 	print(CD资源.歌单[0].歌曲文件)
 	if get_parent().get_parent().插入的CD != CD资源:
 		get_parent().get_parent().插入的CD = CD资源
+		get_parent().get_parent().当前播放序号 = 1
 		get_parent().get_parent().插入CD()
 
 func 鼠标进入() -> void:
 	$AnimationPlayer.play("选中")
 	$"../../唱片名".show()
-	get_parent().get_parent().当前显示CD名 = CD名称
+	#get_parent().get_parent().当前显示CD名 = CD名称
+	#get_parent().get_parent().当前显示CD名 = CD资源.CD英文名称
+	get_parent().get_parent().当前显示CD名 = CD本地化标签
 
 func 鼠标离开() -> void:
 	$AnimationPlayer.play("复原")

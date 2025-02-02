@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://bi0ehbg34gsn3"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_q8mbu"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_3tet2"]
+[ext_resource type="AudioStream" uid="uid://cx4wl4vgnndd4" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/07 A Message From Her.mp3" id="3_wm6fg"]
+[ext_resource type="AudioStream" uid="uid://dc336un75kglu" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/12 Summer & Sea.mp3" id="4_tha58"]
+[ext_resource type="AudioStream" uid="uid://46tvlmy6dwhb" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/09 Floating Emotion.mp3" id="5_p60tn"]
+
+[sub_resource type="Resource" id="Resource_0t4sh"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "A Message From Her"
+"歌曲文件" = ExtResource("3_wm6fg")
+
+[sub_resource type="Resource" id="Resource_ass33"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "Summer & Sea"
+"歌曲文件" = ExtResource("4_tha58")
+
+[sub_resource type="Resource" id="Resource_8ft8x"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "Floating Emotion"
+"歌曲文件" = ExtResource("5_p60tn")
+
+[resource]
+script = ExtResource("1_q8mbu")
+"歌单" = Array[ExtResource("2_3tet2")]([SubResource("Resource_0t4sh"), SubResource("Resource_ass33"), SubResource("Resource_8ft8x")])

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://281h0umag4st"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_7nptj"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_n4umh"]
+[ext_resource type="AudioStream" uid="uid://dtb66mpemok5t" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/08 Petrichor.mp3" id="3_7dpsd"]
+[ext_resource type="AudioStream" uid="uid://kxg115ow8uep" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/21 Stratosphere.mp3" id="4_fv45s"]
+[ext_resource type="AudioStream" uid="uid://bdx5k6lrykvpl" path="res://assets/music/OST_Green to White.wav" id="5_bhofx"]
+
+[sub_resource type="Resource" id="Resource_jsx2m"]
+script = ExtResource("2_n4umh")
+"歌曲名称" = "OST_Petrichor"
+"歌曲文件" = ExtResource("3_7dpsd")
+
+[sub_resource type="Resource" id="Resource_7yaqo"]
+script = ExtResource("2_n4umh")
+"歌曲名称" = "OST_Stratosphere"
+"歌曲文件" = ExtResource("4_fv45s")
+
+[sub_resource type="Resource" id="Resource_fi1y5"]
+script = ExtResource("2_n4umh")
+"歌曲名称" = "OST_Green to White"
+"歌曲文件" = ExtResource("5_bhofx")
+
+[resource]
+script = ExtResource("1_7nptj")
+"歌单" = Array[ExtResource("2_n4umh")]([SubResource("Resource_jsx2m"), SubResource("Resource_7yaqo"), SubResource("Resource_fi1y5")])

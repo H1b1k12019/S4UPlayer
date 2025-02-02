@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dib40k3leab3h"
+path="res://.godot/imported/20 Way Home.mp3-bd494651933e7ecc5958205aa2b17751.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/20 Way Home.mp3"
+dest_files=["res://.godot/imported/20 Way Home.mp3-bd494651933e7ecc5958205aa2b17751.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

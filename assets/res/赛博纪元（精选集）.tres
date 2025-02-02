@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CD" load_steps=9 format=3 uid="uid://c2fy705veyh1o"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_q8mbu"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_3tet2"]
+[ext_resource type="AudioStream" uid="uid://dgbxujnctc8bm" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/23 Aqua.mp3" id="3_oy4kv"]
+[ext_resource type="AudioStream" uid="uid://cgy2ku108wqbn" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/24 Cyberlife.mp3" id="4_uovg2"]
+[ext_resource type="AudioStream" uid="uid://evo04xrbqm4s" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/25 Exosphere.mp3" id="5_as74s"]
+
+[sub_resource type="Resource" id="Resource_cywr4"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "Aqua"
+"歌曲文件" = ExtResource("3_oy4kv")
+
+[sub_resource type="Resource" id="Resource_vxh6o"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "Cyberlife"
+"歌曲文件" = ExtResource("4_uovg2")
+
+[sub_resource type="Resource" id="Resource_jhe28"]
+script = ExtResource("2_3tet2")
+"歌曲名称" = "Exosphere"
+"歌曲文件" = ExtResource("5_as74s")
+
+[resource]
+script = ExtResource("1_q8mbu")
+"歌单" = Array[ExtResource("2_3tet2")]([SubResource("Resource_cywr4"), SubResource("Resource_vxh6o"), SubResource("Resource_jhe28")])

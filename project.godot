@@ -10,7 +10,12 @@ config_version=5
 
 [application]
 
-config/name="S4U桌面播放器"
+config/name="APPNAME"
+config/name_localized={
+"en": "Workman Player (S4U)",
+"zh": "S4U桌面播放器"
+}
+config/version="1.2"
 run/main_scene="res://随身听.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/bg_color=Color(0.631373, 0.396078, 0.329412, 1)
@@ -26,8 +31,8 @@ window/size/viewport_height=380
 window/size/borderless=true
 window/size/transparent=true
 window/energy_saving/keep_screen_on=false
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/subwindows/embed_subwindows=false
+window/stretch/mode="viewport"
 window/per_pixel_transparency/allowed=true
 
 [input]
@@ -42,6 +47,10 @@ window/per_pixel_transparency/allowed=true
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://lang/languague.en.translation", "res://lang/languague.zh.translation")
 
 [rendering]
 

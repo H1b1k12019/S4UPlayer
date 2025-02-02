@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cskk5jh60at6e"
+path="res://.godot/imported/10 Loveyu.mp3-01ab012c4b256ef57a94f36992d9365a.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/10 Loveyu.mp3"
+dest_files=["res://.godot/imported/10 Loveyu.mp3-01ab012c4b256ef57a94f36992d9365a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

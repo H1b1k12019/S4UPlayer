@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ct4p623ojs6pe"
+path="res://.godot/imported/19 Rainy Street.mp3-311f185593c860b857ab28c44595869e.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/19 Rainy Street.mp3"
+dest_files=["res://.godot/imported/19 Rainy Street.mp3-311f185593c860b857ab28c44595869e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

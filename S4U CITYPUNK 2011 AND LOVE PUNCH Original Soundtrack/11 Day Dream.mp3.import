@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cucyen2ow775n"
+path="res://.godot/imported/11 Day Dream.mp3-8074e196900291b350849563b00b2da6.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/11 Day Dream.mp3"
+dest_files=["res://.godot/imported/11 Day Dream.mp3-8074e196900291b350849563b00b2da6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

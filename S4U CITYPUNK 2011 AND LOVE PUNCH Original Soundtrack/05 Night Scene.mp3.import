@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dw3fmhj2xvjut"
+path="res://.godot/imported/05 Night Scene.mp3-93d0c6a822a25f1aaec376a79c998a52.mp3str"
+
+[deps]
+
+source_file="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/05 Night Scene.mp3"
+dest_files=["res://.godot/imported/05 Night Scene.mp3-93d0c6a822a25f1aaec376a79c998a52.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

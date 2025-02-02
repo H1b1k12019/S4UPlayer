@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="CD" load_steps=11 format=3 uid="uid://b8m1opynr0s5f"]
+
+[ext_resource type="Script" path="res://assets/rescript/唱片.gd" id="1_vr1i6"]
+[ext_resource type="Script" path="res://assets/rescript/曲目.gd" id="2_10a7o"]
+[ext_resource type="AudioStream" uid="uid://cgklhp8rgnb8x" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/18 Liars.mp3" id="3_nxo5l"]
+[ext_resource type="AudioStream" uid="uid://dsx618mjxl12s" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/06 Nuit Pluvieuse.mp3" id="4_8yp1v"]
+[ext_resource type="AudioStream" uid="uid://cucyen2ow775n" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/11 Day Dream.mp3" id="5_4uh8x"]
+[ext_resource type="AudioStream" uid="uid://dplpwuw4ggnw8" path="res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/16 OCEAN=SPACE.mp3" id="6_1jja5"]
+
+[sub_resource type="Resource" id="Resource_bslrs"]
+script = ExtResource("2_10a7o")
+"歌曲名称" = "OST_Liars"
+"歌曲文件" = ExtResource("3_nxo5l")
+
+[sub_resource type="Resource" id="Resource_0mpn8"]
+script = ExtResource("2_10a7o")
+"歌曲名称" = "OST_Nuit Pluvieuse"
+"歌曲文件" = ExtResource("4_8yp1v")
+
+[sub_resource type="Resource" id="Resource_pdbv0"]
+script = ExtResource("2_10a7o")
+"歌曲名称" = "OST_Day Dream"
+"歌曲文件" = ExtResource("5_4uh8x")
+
+[sub_resource type="Resource" id="Resource_shxou"]
+script = ExtResource("2_10a7o")
+"歌曲名称" = "OST_OCEAN=SPACE"
+"歌曲文件" = ExtResource("6_1jja5")
+
+[resource]
+script = ExtResource("1_vr1i6")
+"歌单" = Array[ExtResource("2_10a7o")]([SubResource("Resource_bslrs"), SubResource("Resource_0mpn8"), SubResource("Resource_pdbv0"), SubResource("Resource_shxou")])

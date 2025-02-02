@@ -1,0 +1,120 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738517425
+cd盘.gd::GDScript::-1::1738503040::0::1::::<>Control<>::
+CD盘.tscn::PackedScene::5104036987431316796::1737437679::0::1::::<><>::res://cd盘.gd<>uid://bi0ehbg34gsn3::::res://assets/res/碧色晴海风.tres<>uid://c0obrqcevmea3::::res://assets/texture/CD_side/碧色晴海风side.png
+export_presets.cfg::TextFile::-1::1738505955::0::1::::<><>::
+ICON.png::CompressedTexture2D::3860843377001997996::1737426015::1737426022::1::::<><>::
+START.png::CompressedTexture2D::4962994327515556184::1737432534::1737432537::1::::<><>::
+随身听.gd::GDScript::-1::1738515871::0::1::::<>Node2D<>::
+随身听.tscn::PackedScene::2503698750243316910::1738516992::0::1::::<><>::res://随身听.gd<>uid://d2hu5hbradqrv::::res://assets/texture/MDPlayer_Box.png<>uid://7ncce28jtgfj::::res://assets/res/阳电子涡流.tres<>uid://ci0apiu2mgvjn::::res://assets/texture/MDPlayer_MD.png<>uid://becjojmuxfshs::::res://assets/music/Caravan.wav<>uid://b8m1opynr0s5f::::res://assets/res/真相处方.tres<>uid://6xxbmya1pxfi::::res://assets/texture/MDPlayer_Top.png<>uid://bibrd5syhf8yj::::res://assets/texture/CD_front/便利店后武装少女两人.png<>uid://bn2fqtmbxntpw::::res://assets/texture/随机.png<>uid://61mtfugcrl48::::res://assets/texture/上一首.png<>uid://bw0jh8gkvk3q6::::res://assets/texture/MDPlayer_Bottom.png<>uid://dxbettu0aebo::::res://assets/texture/随机_按下.png<>uid://70rcnqrqxbiq::::res://assets/texture/上一首_按下.png<>uid://dlcwshh5kd4ak::::res://assets/texture/下一首.png<>uid://dxqoq358x5jti::::res://assets/texture/下一首_按下.png<>uid://du0lxlm647peo::::res://assets/texture/播放.png<>uid://bvx8o3lcio043::::res://assets/texture/播放_按下.png<>uid://3vsdos4on7yw::::res://assets/font/unifont-15.1.04.otf<>uid://bfgrdwrekh4rn::::res://assets/texture/UI/boo.png<>uid://sxdqku7scaur::::res://assets/font/(mod)Fusion-Pixel-12px.otf<>uid://ceyo0jpq47bua::::res://CD盘.tscn<>uid://50mih02r2rf3::::res://assets/res/烟，花.tres<>uid://cbw65r6ekeuaj::::res://assets/res/网中鸟.tres<>uid://c2fy705veyh1o::::res://assets/res/赛博纪元（精选集）.tres<>uid://dx8c6y2uocaam::::res://assets/res/终局（纪念版）.tres<>uid://ca63yfm846npg::::res://assets/texture/UI/pin.png<>uid://cdcglqblscu7n::::res://assets/texture/UI/pin_hover.png<>uid://immg5mj6odi0::::res://assets/res/便利店后武装少女两人.tres<>uid://281h0umag4st::::res://assets/res/烂诡计.tres<>uid://xgas2pn4sgwh::::res://assets/texture/UI/window.png<>uid://dp1ycg3gby4nf::::res://assets/texture/UI/window_hover.png<>uid://csbifrcebhxot::::res://assets/res/8号混凝土.tres<>uid://cnpbncoiovoqt::::res://assets/texture/+.png<>uid://c1d8bxgykdf4t::::res://assets/res/浓缩拼配.tres<>uid://cbvb2ovsyrqam::::res://assets/texture/+_pressed.png<>uid://bdxbktcnwioay::::res://assets/texture/-.png<>uid://b7s2tjo0m856u::::res://assets/texture/-_pressed.png
+::res://assets/::1736836033
+::res://assets/font/::1738500025
+(mod)Fusion-Pixel-12px.otf::FontFile::1311091155116392169::1738488444::1738499839::1::::<><>::
+unifont-15.1.04.otf::FontFile::2009738582421939374::1702628970::1736788625::1::::<><>::
+::res://assets/music/::1737425726
+Caravan.wav::AudioStreamWAV::2671876759990382944::1736445337::1736786671::1::::<><>::
+OST_Green to White.wav::AudioStreamWAV::2646308916694211085::1736445350::1736780436::1::::<><>::
+::res://assets/res/::1738503040
+8号混凝土.tres::Resource/CD::6038800491706442515::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>uid://dw3fmhj2xvjut::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/05 Night Scene.mp3<>res://assets/rescript/曲目.gd<>uid://bp6yloacn33ec::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/22 Nil! Nil!.mp3<>uid://cbby24liir103::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/13 Gameboy Nightgirl.mp3
+便利店后武装少女两人.tres::Resource/CD::587024195518659893::1738503040::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://becjojmuxfshs::::res://assets/music/Caravan.wav
+浓缩拼配.tres::Resource/CD::6605951100202239673::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://suxelb6dosie::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/04 Typing in the Room.mp3<>uid://d0ndutpkw0g21::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/26 私のそばにいて.mp3<>uid://ixyalr2wgsd6::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/14 暮れゆく.mp3
+烂诡计.tres::Resource/CD::1964815731005446299::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://dtb66mpemok5t::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/08 Petrichor.mp3<>uid://kxg115ow8uep::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/21 Stratosphere.mp3<>uid://bdx5k6lrykvpl::::res://assets/music/OST_Green to White.wav
+烟，花.tres::Resource/CD::2158018050791019282::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://cskk5jh60at6e::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/10 Loveyu.mp3
+真相处方.tres::Resource/CD::4729029525263424449::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://cgklhp8rgnb8x::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/18 Liars.mp3<>uid://dsx618mjxl12s::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/06 Nuit Pluvieuse.mp3<>uid://cucyen2ow775n::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/11 Day Dream.mp3<>uid://dplpwuw4ggnw8::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/16 OCEAN=SPACE.mp3
+碧色晴海风.tres::Resource/CD::2999796308280634014::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://cx4wl4vgnndd4::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/07 A Message From Her.mp3<>uid://dc336un75kglu::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/12 Summer & Sea.mp3<>uid://46tvlmy6dwhb::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/09 Floating Emotion.mp3
+终局（纪念版）.tres::Resource/CD::8841908017432223804::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://c7tg3vop4hxvm::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/17 Whispers of the Mind.mp3<>uid://dib40k3leab3h::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/20 Way Home.mp3<>uid://ct4p623ojs6pe::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/19 Rainy Street.mp3
+网中鸟.tres::Resource/CD::4890383263187631577::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://cg4yi5g4ghkll::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/01 Those Days.mp3<>uid://dgbxujnctc8bm::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/23 Aqua.mp3
+赛博纪元（精选集）.tres::Resource/CD::6679777748003054782::1738502962::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://dgbxujnctc8bm::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/23 Aqua.mp3<>uid://cgy2ku108wqbn::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/24 Cyberlife.mp3<>uid://evo04xrbqm4s::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/25 Exosphere.mp3
+阳电子涡流.tres::Resource/CD::2273005166108425811::1738501830::0::1::::<><>::res://assets/rescript/唱片.gd<>res://assets/rescript/曲目.gd<>uid://b1cinc4kfwvku::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/03 City Police.mp3<>uid://nbplbpmijcdm::::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/02 Night of MaYuan.mp3
+::res://assets/rescript/::1738504853
+唱片.gd::GDScript::-1::1738504853::0::1::::CD<>Resource<>::
+曲目.gd::GDScript::-1::1736857628::0::1::::曲目<>Resource<>::
+::res://assets/sound/::1736789573
+Object_Interact_ComputerCase.wav::AudioStreamWAV::4747746938255032804::1736445337::1736789573::1::::<><>::
+::res://assets/texture/::1738512291
++.png::CompressedTexture2D::5716346060362046195::1738154784::1738154836::1::::<><>::
++_pressed.png::CompressedTexture2D::4886491845906079572::1738154810::1738154836::1::::<><>::
+-.png::CompressedTexture2D::2644547479536040592::1738154794::1738154836::1::::<><>::
+-_pressed.png::CompressedTexture2D::4671296264062768402::1738154823::1738154836::1::::<><>::
+MDPlayer_Bottom.png::CompressedTexture2D::3982745384095764879::1738488460::1738512291::1::::<><>::
+MDPlayer_Box.png::CompressedTexture2D::9070079757237866767::1736391467::1736780434::1::::<><>::
+MDPlayer_MD.png::CompressedTexture2D::5385988799576471395::1736391473::1736780434::1::::<><>::
+MDPlayer_PressDown.png::CompressedTexture2D::3339262226980696658::1736391474::1736780434::1::::<><>::
+MDPlayer_PressNone.png::CompressedTexture2D::6784568573918165029::1736391446::1736780434::1::::<><>::
+MDPlayer_PressUp.png::CompressedTexture2D::3617559982314863511::1736391474::1736780434::1::::<><>::
+MDPlayer_Top.png::CompressedTexture2D::2224733785140781094::1738154751::1738154836::1::::<><>::
+triangle3.png::CompressedTexture2D::2357308977815193681::1736391473::1736780434::1::::<><>::
+triangle.png::CompressedTexture2D::5833247324514652245::1736391469::1736780434::1::::<><>::
+triangleDown.png::CompressedTexture2D::7078764822406824007::1736391471::1736780434::1::::<><>::
+上一首.png::CompressedTexture2D::2230290802170754831::1736783082::1736783084::1::::<><>::
+上一首_按下.png::CompressedTexture2D::2298688909048481916::1736783020::1736783084::1::::<><>::
+下一首.png::CompressedTexture2D::7936836384590588726::1736783194::1736783214::1::::<><>::
+下一首_按下.png::CompressedTexture2D::8807515627949444658::1736783144::1736783214::1::::<><>::
+播放.png::CompressedTexture2D::8615357925614720642::1736783182::1736783214::1::::<><>::
+播放_按下.png::CompressedTexture2D::3909897238059912138::1736783131::1736783214::1::::<><>::
+泡泡.tres::StyleBoxTexture::4973852113964967471::1738166196::0::1::::<><>::uid://bfgrdwrekh4rn::::res://assets/texture/UI/boo.png
+随机.png::CompressedTexture2D::3354947024571456984::1736783212::1736783214::1::::<><>::
+随机_按下.png::CompressedTexture2D::258116107662916240::1736783154::1736783214::1::::<><>::
+::res://assets/texture/CD_front/::1737425304
+8号混凝土.png::CompressedTexture2D::759030421374016527::1736391487::1736836771::1::::<><>::
+便利店后武装少女两人.png::CompressedTexture2D::2951034961417188309::1736391467::1737425042::1::::<><>::
+浓缩拼配.png::CompressedTexture2D::5528875797772545796::1736391497::1736836759::1::::<><>::
+烂诡计.png::CompressedTexture2D::5935759305377669771::1736391482::1736836775::1::::<><>::
+烟，花.png::CompressedTexture2D::5535363812409881397::1736391495::1736836787::1::::<><>::
+真相处方.png::CompressedTexture2D::3938177876299537420::1736391484::1736836785::1::::<><>::
+碧色晴海风.png::CompressedTexture2D::7780458502855796018::1736391497::1736836763::1::::<><>::
+终局（纪念版）.png::CompressedTexture2D::1932067098995577710::1736391489::1737391788::1::::<><>::
+网中鸟.png::CompressedTexture2D::8312166269176235925::1736391492::1736836780::1::::<><>::
+赛博纪元（精选集）.png::CompressedTexture2D::6015279750155910280::1736391467::1737425304::1::::<><>::
+阳电子涡流.png::CompressedTexture2D::7966490185904844702::1736391467::1737425304::1::::<><>::
+::res://assets/texture/CD_side/::1737393307
+8号混凝土side.png::CompressedTexture2D::9122983546683994915::1736391473::1736836811::1::::<><>::
+MDPlayer_ListMD.png::CompressedTexture2D::5626296646910861377::1736391475::1736836731::1::::<><>::
+便利店后武装少女两人side.png::CompressedTexture2D::4819089569210124624::1736391475::1737393307::1::::<><>::
+浓缩拼配side.png::CompressedTexture2D::443653239867168012::1736391470::1736836804::1::::<><>::
+烂诡计side.png::CompressedTexture2D::7048013991679690847::1736391470::1736836815::1::::<><>::
+烟，花side.png::CompressedTexture2D::4601953113981027959::1736391473::1736836820::1::::<><>::
+真相处方side.png::CompressedTexture2D::4073785858369600584::1736391474::1736836824::1::::<><>::
+碧色晴海风side.png::CompressedTexture2D::6556555666056490460::1736391470::1736836807::1::::<><>::
+终局（纪念版）side.png::CompressedTexture2D::1209995727397915350::1736391446::1737391793::1::::<><>::
+网中鸟side.png::CompressedTexture2D::8577230126396705868::1736391446::1736836818::1::::<><>::
+赛博纪元（精选集）side.png::CompressedTexture2D::1194034649720586949::1736391475::1737393302::1::::<><>::
+阳电子涡流side.png::CompressedTexture2D::1801739433211081707::1736391475::1737393296::1::::<><>::
+::res://assets/texture/UI/::1738512290
+boo.png::CompressedTexture2D::2750789896637158747::1736391490::1738165769::1::::<><>::
+pin.png::CompressedTexture2D::4838580295306994080::1737436556::1737436557::1::::<><>::
+pin_hover.png::CompressedTexture2D::4987921441940324717::1737436550::1737436557::1::::<><>::
+UISprite.png::CompressedTexture2D::1434223192961041370::1737395052::1737395054::1::::<><>::
+window.png::CompressedTexture2D::1626763256422041163::1737438227::1737438228::1::::<><>::
+window_hover.png::CompressedTexture2D::8267229665339098691::1737438016::1737438075::1::::<><>::
+::res://lang/::1738505451
+languague.csv::Translation::8498261908518718524::1738505449::1738505451::1::::<><>::
+languague.en.translation::OptimizedTranslation::2145357373207625375::1738505451::0::1::::<><>::
+languague.zh.translation::OptimizedTranslation::612185847312169206::1738505451::0::1::::<><>::
+::res://S4U CITYPUNK 2011 AND LOVE PUNCH Original Soundtrack/::1738513394
+01 Those Days.mp3::AudioStreamMP3::5255314464555027425::1736830099::1736830440::1::::<><>::
+02 Night of MaYuan.mp3::AudioStreamMP3::915449819924619906::1736830099::1736830440::1::::<><>::
+03 City Police.mp3::AudioStreamMP3::4215968475360911548::1736830099::1736830440::1::::<><>::
+04 Typing in the Room.mp3::AudioStreamMP3::1306090955289761180::1736830099::1736830440::1::::<><>::
+05 Night Scene.mp3::AudioStreamMP3::8761544585545399831::1736830099::1736830440::1::::<><>::
+06 Nuit Pluvieuse.mp3::AudioStreamMP3::8472072334572874232::1736830099::1736830440::1::::<><>::
+07 A Message From Her.mp3::AudioStreamMP3::6448408699411042887::1736830099::1736830440::1::::<><>::
+08 Petrichor.mp3::AudioStreamMP3::8496852697993398951::1736830099::1736830440::1::::<><>::
+09 Floating Emotion.mp3::AudioStreamMP3::2100663897839882575::1736830099::1736830440::1::::<><>::
+10 Loveyu.mp3::AudioStreamMP3::6057545559121906078::1736830099::1736830440::1::::<><>::
+11 Day Dream.mp3::AudioStreamMP3::6182212071837046249::1736830099::1736830440::1::::<><>::
+12 Summer & Sea.mp3::AudioStreamMP3::7359198822921438738::1736830099::1736830440::1::::<><>::
+13 Gameboy Nightgirl.mp3::AudioStreamMP3::4846601553584997534::1736830099::1736830440::1::::<><>::
+14 暮れゆく.mp3::AudioStreamMP3::610449250548968317::1736830099::1736830440::1::::<><>::
+15 Sunny Day.mp3::AudioStreamMP3::7452656378140949074::1736830099::1736830440::1::::<><>::
+16 OCEAN=SPACE.mp3::AudioStreamMP3::8235753989080448113::1736830099::1736830440::1::::<><>::
+17 Whispers of the Mind.mp3::AudioStreamMP3::7058522970654512410::1736830099::1736830440::1::::<><>::
+18 Liars.mp3::AudioStreamMP3::5215299433842490917::1736830099::1736830440::1::::<><>::
+19 Rainy Street.mp3::AudioStreamMP3::6167263927912943966::1736830099::1736830440::1::::<><>::
+20 Way Home.mp3::AudioStreamMP3::7724643184568634083::1736830099::1736830440::1::::<><>::
+21 Stratosphere.mp3::AudioStreamMP3::749781269939876623::1736830099::1736830440::1::::<><>::
+22 Nil! Nil!.mp3::AudioStreamMP3::3504726635635067114::1736830099::1736830440::1::::<><>::
+23 Aqua.mp3::AudioStreamMP3::7583892190282270578::1736830099::1736830440::1::::<><>::
+24 Cyberlife.mp3::AudioStreamMP3::5245177803868360143::1736830099::1736830440::1::::<><>::
+25 Exosphere.mp3::AudioStreamMP3::325003549615775756::1736830099::1736830440::1::::<><>::
+26 私のそばにいて.mp3::AudioStreamMP3::8941038941289750256::1736830099::1736830440::1::::<><>::
